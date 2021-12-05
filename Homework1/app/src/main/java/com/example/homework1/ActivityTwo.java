@@ -17,7 +17,6 @@ public class ActivityTwo extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_two);
 
-        EditText newText = (EditText) findViewById(R.id.editText);
         Button apply = (Button)findViewById(R.id.button2);
         apply.setOnClickListener(this);
     }
@@ -25,7 +24,8 @@ public class ActivityTwo extends Activity implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         Intent intent = new Intent();
-        intent.putExtra("value", apply.getText().toString());
+        EditText newText = (EditText) findViewById(R.id.editText);
+        intent.putExtra("data", newText.getText().toString());
         setResult(RESULT_OK,intent);
         finish();
 

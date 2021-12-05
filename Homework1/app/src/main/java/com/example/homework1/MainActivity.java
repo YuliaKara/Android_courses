@@ -7,11 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity {
 
 
+    private static final int REQUEST_CODE = 100;
+    private static final String DATA = "data";
     TextView text;
     Button next;
 
@@ -22,19 +25,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         TextView text = (TextView)findViewById(R.id.textView);
         Button next = (Button)findViewById(R.id.button1);
-        next.setOnClickListener(this);
-
-    }
-    @Override
-    public void onClick(View v){
-        Intent intent = new Intent(this, ActivityTwo.class);
-        startActivityForResult(intent,1);
+        next.setOnClickListener(view ->{
+            Intent intent = new Intent(this, ActivityTwo.class);
+            startActivityForResult(intent, REQUEST_CODE);
+        });
     }
 
-    private void startActivityForResult(int requestCode, int resultCode, Intent value) {
-        if (value == null) {return;}
-        String val = value.getStringExtra("value");
-        text.setText(val);
+    private void startActivityForResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode){
+            case REQUEST_CODE:
+                String val = data.getStringExtra(DATA);
+                text.setText("New text is" + val);
+                break;
+        }
     }
 
 }
