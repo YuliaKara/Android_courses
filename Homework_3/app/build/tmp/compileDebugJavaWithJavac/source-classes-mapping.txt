@@ -1,0 +1,2 @@
+com/example/homework_3/MainActivity.java
+ com.example.homework_3.MainActivity

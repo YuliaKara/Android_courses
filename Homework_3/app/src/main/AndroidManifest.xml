@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.homework_3">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.homework_3"
+    tools:ignore="ProtectedPermissions">
 
-    <uses-permission android:name="android.permission.LOCATION_HARDWARE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION">
+
+    </uses-permission>
 
     <application
         android:allowBackup="true"

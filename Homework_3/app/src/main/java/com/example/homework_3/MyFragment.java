@@ -1,5 +1,7 @@
 package com.example.homework_3;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -9,9 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.PopupMenu;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
 public class MyFragment extends Fragment {
@@ -22,10 +26,27 @@ public class MyFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.frag_with_menu, container, false);
+
         Button permiss = (Button) v.findViewById(R.id.button);
-
-
+        permiss.setOnClickListener((View.OnClickListener) this);
         return v;
+    }
+    public void onClick(View v){
+        public void checkPermission() {
+            ActivityCompat.requestPermissions(MainActivity.this, new String[]{
+                            Manifest.permission.ACCESS_COARSE_LOCATION,}, 10);
+                }
+            }
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if (requestCode > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            Toast.makeText(MainActivity.this,"GRANTED" ).show();
+
+        } else {
+            checkPermission();
+        }
+    }
+
+    private void checkPermission() {
     }
 
     @Override
