@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Homework_3</string>
+    <string name="permission">Permission</string>
+    <string name="popup_menu">Popup menu</string>
+    <string name="first">First</string>
+    <string name="second">Second</string>
+</resources>
