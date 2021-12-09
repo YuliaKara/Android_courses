@@ -16,11 +16,10 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 public class MyFragment extends Fragment {
-    Button ppMenu;
-
 
     @Nullable
     @Override
@@ -31,23 +30,28 @@ public class MyFragment extends Fragment {
         permiss.setOnClickListener((View.OnClickListener) this);
         return v;
     }
-    public void onClick(View v){
-        public void checkPermission() {
-            ActivityCompat.requestPermissions(MainActivity.this, new String[]{
-                            Manifest.permission.ACCESS_COARSE_LOCATION,}, 10);
-                }
-            }
+    public void onClick(View v) {
+        if (v.getId()==R.id.button) {
+            checkPermissions ();
+        }
+    }
+    public void checkPermissions () {
+        if (ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)
+            ;
+        ActivityCompat.requestPermissions(getActivity(), new String[]{
+                Manifest.permission.ACCESS_COARSE_LOCATION,}, 10);
+    }
+
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         if (requestCode > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            Toast.makeText(MainActivity.this,"GRANTED" ).show();
+            Toast.makeText(getActivity(),"GRANTED",Toast.LENGTH_SHORT ).show();
 
-        } else {
-            checkPermission();
+        }
+        else {
+            Toast.makeText(getActivity(),"NOT GRANTED",Toast.LENGTH_SHORT ).show();
         }
     }
 
-    private void checkPermission() {
-    }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -67,12 +71,12 @@ public class MyFragment extends Fragment {
         String getText = item.getTitle().toString();
         switch (id) {
             case R.id.first:
-                PopupMenu popupMenu1 = new PopupMenu(MainActivity.this, id);
+                PopupMenu popupMenu1 = new PopupMenu(getActivity(), getView().findViewById(R.id.first));
                 popupMenu1.getMenu().add(getText);
                 popupMenu1.show();
                 break;
             case R.id.second:
-                PopupMenu popupMenu2 = new PopupMenu(MainActivity.this, id);
+                PopupMenu popupMenu2 = new PopupMenu(getActivity(), getView().findViewById(R.id.second));
                 popupMenu2.getMenu().add(getText);
                 popupMenu2.show();
                 break;

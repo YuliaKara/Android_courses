@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-29:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Julia\.gradle\caches\transforms-3\f794c157ce27c216c504b2261e60ef5d\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.2] C:\Users\Julia\.gradle\caches\transforms-3\102de147192b5ae927c001061465296f\transformed\constraintlayout-2.1.2\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.0] C:\Users\Julia\.gradle\caches\transforms-3\9079c9694b4d4270d7cd62242948af25\transformed\appcompat-1.4.0\AndroidManifest.xml:17:1-24:12
@@ -43,25 +43,33 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Julia\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Julia\.gradle\caches\transforms-3\eb3bd80f829817dc46cef00554f9b4ab\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Julia\.gradle\caches\transforms-3\998ecad2e598076d0444e5b886cc28b2\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Julia\.gradle\caches\transforms-3\abd986d958258d7e8503cbe4ed7e75cb\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-29:12
 	package
-		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:3:5-37
+		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:4:5-37
 		INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml
 		INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml
-		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-23:12
+		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-29:12
 		INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml
-		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-23:12
+		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:1-29:12
 		INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:2:11-69
+	tools:ignore
+		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:5:5-40
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:7:5-9:23
+	android:name
+		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:7:22-78
 application
-ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:5:5-21:19
+ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:11:5-27:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Julia\.gradle\caches\transforms-3\f794c157ce27c216c504b2261e60ef5d\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\Julia\.gradle\caches\transforms-3\f794c157ce27c216c504b2261e60ef5d\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.2] C:\Users\Julia\.gradle\caches\transforms-3\102de147192b5ae927c001061465296f\transformed\constraintlayout-2.1.2\AndroidManifest.xml:9:5-20
@@ -79,33 +87,33 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Julia\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\Julia\.gradle\caches\transforms-3\21249a56641fb0309777a5ae16ce99ff\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:14:9-41
 	android:roundIcon
-		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:15:9-54
 	android:icon
-		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:11:9-48
+		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:17:9-48
 activity#com.example.homework_3.MainActivity
-ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:12:9-20:20
+ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:18:9-26:20
 	android:exported
-		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:14:13-36
+		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:20:13-36
 	android:name
-		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:13:13-41
+		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:19:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml:24:27-74
 uses-sdk
 INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\ANDROID\Android courses\Homework_3\app\src\main\AndroidManifest.xml

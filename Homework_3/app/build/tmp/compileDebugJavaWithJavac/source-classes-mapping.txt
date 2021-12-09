@@ -1,2 +1,6 @@
+com/example/homework_3/MyFragment.java
+ com.example.homework_3.MyFragment
+com/example/homework_3/BuildConfig.java
+ com.example.homework_3.BuildConfig
 com/example/homework_3/MainActivity.java
  com.example.homework_3.MainActivity
